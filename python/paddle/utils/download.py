@@ -280,7 +280,7 @@ def _uncompress_file_zip(filepath):
         file_list_tmp = files.namelist()
         file_list = []
         for file in file_list_tmp:
-            file_list.append(file.replace("../", ""))
+            file_list.append(file.replace("..", "."))
 
         file_dir = os.path.dirname(filepath)
 
